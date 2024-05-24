@@ -18,7 +18,6 @@ class User(UserMixin, db.Model):
     email = db.Column(db.String(100), unique=True, nullable=False)
     password = db.Column(db.String(100), nullable=False)
 
-
 class Todo(db.Model):
     """
     Todo model for the application.
